@@ -8,25 +8,25 @@
 <div class="site-wrapper">
   <header class="page-header">
     <nav class="main-nav">
-      <input class="main-nav__close-btn" type="image" src="#" alt="Close Menu">
+      <button class="main-nav__close-btn"><img src="#" alt="Close Menu"></button>
 
-      <ul class="main-mav__list main-mav__list--close">
+      <ul class="main-mav__list  main-mav__list--close">
         <li class="main-nav__item"><a class="main-nav__link" href="">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">Фото и видео</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">Форма отзыва</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">HTML Academy</a></li>
       </ul>
-
-      <figure class="page-logo">
-        <a href="#"><img src="#" width="" height="" alt="Main Logo" /></a>
-      </figure>
-
-      <div class="main-nav__user-block">
-        <input class="main-nav__open-btn" type="image" src="#" alt="Open Menu">
-      </div>
     </nav>
 
-    <div class="inner-page-slogan">
+    <figure class="page-logo">
+      <a href="#"><img src="#" width="" height="" alt="Main Logo" /></a>
+    </figure>
+
+    <div class="main-nav__user-block">
+      <button class="main-nav__toggle-btn"><img src="#" alt="Toggle"></button>
+    </div>
+
+    <div class="page-slogan  page-slogan--small">
       <img src="#" alt="Sedona" />
     </div>
   </header>
@@ -38,55 +38,53 @@
     </div>
 
     <figure class="photo-container">
-      <img src="#" alt="" />
-      <figcaption>Народные просторы</figcaption>
-      <div class="author">Автор фото: Борис</div>
-      <span>1350</span>
+      <img class="photo-container__item" src="#" alt="" />
+      <figcaption class="photo-container__title">Народные просторы</figcaption>
+      <div class="photo-container__author">Автор фото: Борис</div>
+      <span class="photo-container__likes">1350</span>
     </figure>
 
     <figure class="photo-container">
-      <img src="#" alt="" />
-      <figcaption>Местная растительность</figcaption>
-      <div class="author">Автор фото: Сергей</div>
-      <span>143</span>
+      <img class="photo-container__item" src="#" alt="" />
+      <figcaption class="photo-container__title">Местная растительность</figcaption>
+      <div class="photo-container__author">Автор фото: Сергей</div>
+      <span class="photo-container__likes">143</span>
     </figure>
 
     <figure class="photo-container">
-      <img src="#" alt="" />
-      <figcaption>Дорога на север</figcaption>
-      <div class="author">Автор фото: Петр</div>
-      <span>96</span>
+      <img class="photo-container__item" src="#" alt="" />
+      <figcaption class="photo-container__title">Дорога на север</figcaption>
+      <div class="photo-container__author">Автор фото: Петр</div>
+      <span class="photo-container__likes">96</span>
     </figure>
 
     <figure class="photo-container">
-      <img src="#" alt="" />
-      <figcaption>Мост дьявола</figcaption>
-      <div class="author">Автор фото: Антон</div>
-      <span>254</span>
+      <img class="photo-container__item" src="#" alt="" />
+      <figcaption class="photo-container__title">Мост дьявола</figcaption>
+      <div class="photo-container__author">Автор фото: Антон</div>
+      <span class="photo-container__likes">254</span>
     </figure>
 
     <article class="video-promo">
       <h1 class="video-promo__title">Все еще сомневаетесь?</h1>
       <p class="video-promo__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="video-promo__video" src="videofile.ogg" controls poster="posterimage.jpg">
+      <video class="video-promo__video" src="videofile.ogg" controls poster="posterimage.jpg"></video>
     </article>
-
-    </video>
 
   </main>
 
   <footer class="main-footer">
     <a class="main-footer__hash-tag" href="#">#visitsedona</a>
 
-    <section class="main-footer__social-btns">
-      <a href="#" class="social-btn social-btn--tw">Twitter</a>
-      <a href="#" class="social-btn social-btn--fb">Facebook</a>
-      <a href="#" class="social-btn social-btn--yoube">YouTube</a>
+    <section class="main-footer__social-block">
+      <a href="#" class="social-btn  social-btn--tw">Twitter</a>
+      <a href="#" class="social-btn  social-btn--fb">Facebook</a>
+      <a href="#" class="social-btn  social-btn--yoube">YouTube</a>
     </section>
 
     <address class="main-footer__copyright">
-      <span>Разработано</span>
-      <div class="main-footer__html-academy-logo"></div>
+      <span class="main-footer__copyright--text">Разработано</span>
+      <div class="main-footer__copyright--logo"></div>
     </address>
   </footer>
 

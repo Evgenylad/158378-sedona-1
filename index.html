@@ -8,23 +8,23 @@
     <div class="site-wrapper">
       <header class="page-header">
         <nav class="main-nav">
-          <input class="main-nav__close-btn" type="image" src="#" alt="Close Menu">
+          <button class="main-nav__close-btn"><img src="#" alt="Close Menu"></button>
 
-          <ul class="main-mav__list main-mav__list--close">
+          <ul class="main-mav__list  main-mav__list--close">
             <li class="main-nav__item"><a class="main-nav__link" href="">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">Фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">HTML Academy</a></li>
           </ul>
-
-          <figure class="page-logo">
-            <a href="#"><img src="#" width="" height="" alt="Main Logo" /></a>
-          </figure>
-
-          <div class="main-nav__user-block">
-            <input class="main-nav__open-btn" type="image" src="#" alt="Open Menu">
-          </div>
         </nav>
+
+        <figure class="page-logo">
+          <a href="#"><img src="#" width="" height="" alt="Main Logo" /></a>
+        </figure>
+
+        <div class="main-nav__user-block">
+          <button class="main-nav__toggle-btn"><img src="#" alt="Toggle"></button>
+        </div>
 
         <div class="page-slogan">
           <img src="#" alt="Sedona" />
@@ -50,19 +50,19 @@
         </div>
 
         <div class="reason-row">
-          <div class="reason">
+          <div class="reason reason--icon">
             <h2 class="reason__name">Жилье</h2>
             <p class="reason__description">Рекомендуем пожить в настоящем
               мотеле, все как в кино!</p>
           </div>
 
-          <div class="reason">
+          <div class="reason reason--icon">
             <h2 class="reason__name">Еда</h2>
             <p class="reason__description">Всегда заказывайте фирменный бургер,
             вы не разочаруетесь!</p>
           </div>
 
-          <div class="reason">
+          <div class="reason reason--icon">
             <h2 class="reason__name">Сувениры</h2>
             <p class="reason__description">Не только китайского,
             но и местного производства!</p>
@@ -108,7 +108,7 @@
         <div class="booking">
           <h2 class="booking__title">Заинтересовались?</h2>
           <p class="booking__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="booking__btn blue-btn blue-btn--large" href="#">Найти гостиницу</a>
+          <a class="booking__btn  btn  btn--large" href="#">Найти гостиницу</a>
         </div>
 
         <div class="map">
@@ -119,15 +119,15 @@
       <footer class="main-footer">
         <a class="main-footer__hash-tag" href="#">#visitsedona</a>
 
-        <section class="main-footer__social-btns">
-          <a href="#" class="social-btn social-btn--tw">Twitter</a>
-          <a href="#" class="social-btn social-btn--fb">Facebook</a>
-          <a href="#" class="social-btn social-btn--yoube">YouTube</a>
+        <section class="main-footer__social-block">
+          <a href="#" class="social-btn  social-btn--tw">Twitter</a>
+          <a href="#" class="social-btn  social-btn--fb">Facebook</a>
+          <a href="#" class="social-btn  social-btn--yoube">YouTube</a>
         </section>
 
         <address class="main-footer__copyright">
-          <span>Разработано</span>
-          <div class="main-footer__html-academy-logo"></div>
+          <span class="main-footer__copyright--text">Разработано</span>
+          <div class="main-footer__copyright--logo"></div>
         </address>
       </footer>
 
