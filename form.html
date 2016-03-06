@@ -7,10 +7,10 @@
 <body>
 <div class="site-wrapper">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--open">
       <button class="main-nav__close-btn"><img src="#" alt="Close Menu"></button>
 
-      <ul class="main-nav__list  main-mav__list--close">
+      <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">Фото и видео</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">Форма отзыва</a></li>
@@ -45,10 +45,10 @@
       <fieldset class="feedback__item">
         <legend class="feedback__legend">Представьтесь, пожалуйста:</legend>
 
-        <label class="feedback__label  feedback__label--uppercase" for="name">Имя:</label>
+        <label class="feedback__label" for="name">Имя:</label>
         <input class="feedback__input" type="text" name="name" id="name" value="Петр">
 
-        <label class="feedback__label  feedback__label--uppercase" for="surname">Фамилия:</label>
+        <label class="feedback__label" for="surname">Фамилия:</label>
         <input class="feedback__input" type="text" name="surname" value="Иванов">
 
         <label class="feedback__label  feedback__label--uppercase" for="secondname">Отчество</label>
@@ -59,11 +59,11 @@
       <fieldset class="feedback__item">
         <legend class="feedback__legend">Контактная информация:</legend>
 
-        <label class="feedback__label  feedback__label--uppercase" for="phone">Контактный телефон:</label>
+        <label class="feedback__label" for="phone">Контактный телефон:</label>
         <input class="feedback__input  feedback__input--phone" type="number" name="phone" id="phone" value="Петр">
         <span class="feedback__error">Ошибка, перепроверьте номер<span>
 
-        <label class="feedback__label  feedback__label--uppercase" for="email">Электронная почта:</label>
+        <label class="feedback__label" for="email">Электронная почта:</label>
         <input class="feedback__input  feedback__input--email" type="email" name="email" value="Введите email">
 
       </fieldset>
@@ -109,18 +109,17 @@
       <button class="feedback__btn  btn  btn--blue  btn--large">Отправить отзыв</button>
     </form>
 
-    <div class="popup-error">
-      <h2 class="popup-error__title">Что-то пошло не так!</h2>
-      <p class="popup-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-error__btn btn btn--blue btn--small"></button>
+    <div class="popup-form--error">
+      <h2 class="popup-form__title">Что-то пошло не так!</h2>
+      <p class="popup-form__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup-form__btn  btn  btn--blue  btn--small"></button>
     </div>
 
-    <div class="popup-sent">
-      <h2 class="popup-sent__title">Ваш отзыв отправлен!
-</h2>
-      <p class="popup-sent__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+    <div class="popup-form--sent">
+      <h2 class="popup-form__title">Ваш отзыв отправлен!</h2>
+      <p class="popup-form__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
 В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="popup-sent__btn btn btn--blue btn--large">Закрыть окно</button>
+      <button class="popup-form__btn  btn  btn--blue  btn--large">Закрыть окно</button>
     </div>
 
   </main>
