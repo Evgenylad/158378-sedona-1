@@ -10,7 +10,7 @@
     <nav class="main-nav">
       <button class="main-nav__close-btn"><img src="#" alt="Close Menu"></button>
 
-      <ul class="main-mav__list  main-mav__list--close">
+      <ul class="main-nav__list  main-mav__list--close">
         <li class="main-nav__item"><a class="main-nav__link" href="">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">Фото и видео</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="">Форма отзыва</a></li>
@@ -18,12 +18,13 @@
       </ul>
     </nav>
 
-    <figure class="page-logo">
-      <a href="#"><img src="#" width="" height="" alt="Main Logo" /></a>
-    </figure>
+    <div class="top-row">
+      <figure class="top-row__logo">
+        <a href="#"><img src="#" width="" height="" alt="Main Logo" /></a>
+      </figure>
 
-    <div class="main-nav__user-block">
-      <button class="main-nav__toggle-btn"><img src="#" alt="Toggle"></button>
+      <button class="menu-toggle"><class="menu-toggle__image" img src="#" alt="Toggle"></button>
+
     </div>
 
     <div class="page-slogan  page-slogan--small">
@@ -38,30 +39,31 @@
       <p class="feedback__description">Помогите нашим отелям стать лучше!
         оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
+
     <form class="feedback-form" action="#" method="post">
 
       <fieldset class="feedback__item">
         <legend class="feedback__legend">Представьтесь, пожалуйста:</legend>
 
-        <label class="feedback__label  feedback__label--name" for="name">Имя:</label>
-        <input class="feedback__input  feedback__input--name" type="text" name="name" id="name" value="Петр">
+        <label class="feedback__label  feedback__label--uppercase" for="name">Имя:</label>
+        <input class="feedback__input" type="text" name="name" id="name" value="Петр">
 
-        <label class="feedback__label  feedback__label--surname" for="surname">Фамилия:</label>
-        <input class="feedback__input  feedback__input--surname" type="text" name="surname" value="Иванов">
+        <label class="feedback__label  feedback__label--uppercase" for="surname">Фамилия:</label>
+        <input class="feedback__input" type="text" name="surname" value="Иванов">
 
-        <label class="feedback__label  feedback__label--secondname" for="secondname">Отчество</label>
-        <input class="feedback__input  feedback__input--secondname" type="text" name="secondname" value="Александрович">
+        <label class="feedback__label  feedback__label--uppercase" for="secondname">Отчество</label>
+        <input class="feedback__input" type="text" name="secondname" value="Александрович">
 
       </fieldset>
 
       <fieldset class="feedback__item">
         <legend class="feedback__legend">Контактная информация:</legend>
 
-        <label class="feedback__label  feedback__label--phone" for="phone">Контактный телефон:</label>
+        <label class="feedback__label  feedback__label--uppercase" for="phone">Контактный телефон:</label>
         <input class="feedback__input  feedback__input--phone" type="number" name="phone" id="phone" value="Петр">
         <span class="feedback__error">Ошибка, перепроверьте номер<span>
 
-        <label class="feedback__label  feedback__label--email" for="email">Электронная почта:</label>
+        <label class="feedback__label  feedback__label--uppercase" for="email">Электронная почта:</label>
         <input class="feedback__input  feedback__input--email" type="email" name="email" value="Введите email">
 
       </fieldset>
@@ -69,13 +71,13 @@
       <fieldset class="feedback__item">
         <legend class="feedback__legend">Ваше общее впечатление:</legend>
 
-        <input class="feedback__radiobtn" type="radio" name="radio" id="good" checked>
+        <input class="feedback__input  feedback__input--radio" type="radio" name="radio" id="good" checked>
         <label class="feedback__label  feedback__label--radio" for="good">Скорее положительное</label>
 
-        <input class="feedback__radiobtn" type="radio" name="radio" id="bad">
+        <input class="feedback__input  feedback__input--radio" type="radio" name="radio" id="bad">
         <label class="feedback__label  feedback__label--radio" for="bad">Скорее отрицательное</label>
 
-        <input class="feedback__radiobtn" type="radio" name="radio" id="noanswer">
+        <input class="feedback__input  feedback__input--radio" type="radio" name="radio" id="noanswer">
         <label class="feedback__label  feedback__label--radio" for="noanswer">Затрудняюсь ответить</label>
 
       </fieldset>
@@ -83,16 +85,16 @@
       <fieldset class="feedback__item">
         <legend class="feedback__legend">Посещенные достопримечательности:</legend>
 
-        <input class="feedback__checkbox" type="checkbox" name="bridge" id="bridge" checked>
+        <input class="feedback__input  feedback__input--checkbox" type="checkbox" name="bridge" id="bridge" checked>
         <label class="feedback__label  feedback__label--checkbox" for="bridge">Мост дьявола</label>
 
-        <input class="feedback__checkbox" type="checkbox" name="park" id="park" checked>
+        <input class="feedback__input  feedback__input--checkbox" type="checkbox" name="park" id="park" checked>
         <label class="feedback__label  feedback__label--checkbox" for="park">Слайд-парк</label>
 
-        <input class="feedback__checkbox" type="checkbox" name="hill" id="hill">
+        <input class="feedback__input  feedback__input--checkbox" type="checkbox" name="hill" id="hill">
         <label class="feedback__label  feedback__label--checkbox" for="hill">Гора-Колокол</label>
 
-        <input class="feedback__checkbox" type="checkbox" name="redrocks" id="redrocks" checked>
+        <input class="feedback__input  feedback__input--checkbox" type="checkbox" name="redrocks" id="redrocks" checked>
         <label class="feedback__label  feedback__label--checkbox" for="redrocks">Красные скалы</label>
 
       </fieldset>
@@ -104,8 +106,23 @@
 
       </fieldset>
 
-      <button class="feedback__btn  btn  btn--large">Отправить отзыв</button>
+      <button class="feedback__btn  btn  btn--blue  btn--large">Отправить отзыв</button>
     </form>
+
+    <div class="popup-error">
+      <h2 class="popup-error__title">Что-то пошло не так!</h2>
+      <p class="popup-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup-error__btn btn btn--blue btn--small"></button>
+    </div>
+
+    <div class="popup-sent">
+      <h2 class="popup-sent__title">Ваш отзыв отправлен!
+</h2>
+      <p class="popup-sent__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="popup-sent__btn btn btn--blue btn--large">Закрыть окно</button>
+    </div>
+
   </main>
 
   <footer class="main-footer">
@@ -117,9 +134,9 @@
       <a href="#" class="social-btn  social-btn--yoube">YouTube</a>
     </section>
 
-    <address class="main-footer__copyright">
-      <span class="main-footer__text">Разработано</span>
-      <div class="main-footer__logo"></div>
+    <address class="copyright">
+      Разработано
+      <a class="copyright__logo" href="#"></a>
     </address>
   </footer>
 
