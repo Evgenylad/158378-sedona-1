@@ -125,6 +125,9 @@ body {
   top: 0;
   right: 0px; }
 
+.gallery-wrapper {
+  padding: 20px; }
+
 .main-footer {
   padding-left: 20px;
   padding-right: 20px;
