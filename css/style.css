@@ -128,6 +128,27 @@ body {
 .gallery-wrapper {
   padding: 20px; }
 
+.gallery {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  .gallery__title {
+    margin: 0;
+    margin-bottom: 35px; }
+  .gallery__description {
+    margin: 0; }
+
+.gallery-item {
+  margin: 0; }
+  .gallery-item__image {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .gallery-item__title {
+    margin-bottom: 12px; }
+  .gallery-item__author {
+    margin-bottom: 12px; }
+  .gallery-item__likes {
+    margin-bottom: 20px; }
+
 .main-footer {
   padding-left: 20px;
   padding-right: 20px;
