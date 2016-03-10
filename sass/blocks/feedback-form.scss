@@ -1,0 +1,37 @@
+.feedback-form {
+
+  &__item {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__legend {
+    display: block;
+    margin: 0;
+
+    font-family: $alternate-font-bold;
+    color: $base-color-bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.feedback-form__label {
+  &--checkbox {
+    font-family: $alternate-font-bold;
+    color: $base-color-bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+
+  &--radio {
+    font-family: $alternate-font-bold;
+    color: $base-color-bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+}
