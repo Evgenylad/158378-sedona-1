@@ -1,0 +1,27 @@
+.main-nav {
+  position: relative;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  &__item {
+    width: 100%;
+    min-height: 26px;
+
+    padding: 15px 15px;
+
+    border-bottom: 1px solid #678fa8;
+    background-color: $btn-color-bg;
+  }
+  &__link {
+
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: $alternate-font-bold;
+    color: $alternate-color;
+  }
+}

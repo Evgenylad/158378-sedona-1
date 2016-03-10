@@ -1,0 +1,16 @@
+.gallery-item {
+  margin: 0;
+  &__image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+  &__author {
+    margin-bottom: 12px;
+  }
+  &__likes {
+    margin-bottom: 20px;
+  }
+}

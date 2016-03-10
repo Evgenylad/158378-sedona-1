@@ -1,0 +1,27 @@
+.reason {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  &__name {
+    margin: 0;
+    margin-bottom: 9px;
+    padding: 0;
+
+    font-family: $alternate-font-bold;
+    color: $base-color-bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  &__number {
+    display: block;
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+  }
+  &__description {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,20 @@
+.feedback-header {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    &__title {
+      margin: 0;
+      margin-bottom: 31px;
+      padding-top: 10px;
+
+      font-family: $alternate-font-bold;
+      color: $base-color-bold;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__description {
+      margin: 0;
+
+      line-height: 24px;
+    }
+}

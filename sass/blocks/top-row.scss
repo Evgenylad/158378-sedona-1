@@ -1,0 +1,23 @@
+.top-row {
+  position: relative;
+  min-height: 56px;
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 23px;
+    height: 23px;
+
+    translateX: 50%;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 23px;
+  height: 23px;
+}

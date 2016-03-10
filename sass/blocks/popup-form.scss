@@ -1,0 +1,16 @@
+.popup-form {
+  padding: 45px;
+  padding-bottom: 35px;
+  &__title {
+    margin-bottom: 31px;
+
+    font-family: $alternate-font-bold;
+    color: $base-color-bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  &__description {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+}

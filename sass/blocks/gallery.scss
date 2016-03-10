@@ -1,0 +1,13 @@
+.gallery {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  &__title {
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: $alternate-font-bold;
+    color: $base-color-bold;
+  }
+  &__description {
+    margin: 0;
+  }
+}
