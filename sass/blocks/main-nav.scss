@@ -26,3 +26,30 @@
     color: $secondary-color;
   }
 }
+
+
+@media (min-width: 321px)  {
+  .main-nav {
+    &__close-btn {
+      display: none;
+    }
+    &__list {
+      font-size: 0;
+    }
+    &__item {
+    display: inline-block;
+    width: 20%;
+
+    background-color: $base-background;
+    border-bottom: none;
+    }
+    &__item:nth-child(4n+2) {
+    margin-right: 20%;
+    }
+    &__link {
+    font-size: 14px;
+    line-height: 26px;
+    color: $base-color-bold;
+    }
+  }
+}
