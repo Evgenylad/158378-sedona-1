@@ -17,7 +17,6 @@
     background-color: $btn-background;
   }
   &__link {
-
     vertical-align: middle;
     font-size: 18px;
     line-height: 40px;
@@ -28,7 +27,7 @@
 }
 
 
-@media (min-width: 321px)  {
+@media (min-width: 768px)  {
   .main-nav {
     &__close-btn {
       display: none;

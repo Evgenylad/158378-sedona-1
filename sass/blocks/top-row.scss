@@ -9,6 +9,9 @@
     width: 23px;
     height: 23px;
 
+    margin: 0;
+    padding: 0;
+
     transform: translateX(50%);
   }
 }
@@ -26,7 +29,7 @@
   }
 }
 
-@media (min-width: 321px)  {
+@media (min-width: 768px)  {
   .top-row {
     width: 20%;
     position: absolute;
@@ -40,8 +43,6 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    margin: 0;
 
     width: 23px;
     height: 23px;

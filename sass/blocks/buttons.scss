@@ -1,7 +1,13 @@
 .main-nav {
   &__close-btn {
     position: absolute;
-    top: 0;
-    right: 0px;
+    top: 20px;
+    right: 20px;
+
+    background-color: $btn-background;
+    border: none;
+  }
+  &__close-btn svg{
+    fill: $base-background;
   }
 }
