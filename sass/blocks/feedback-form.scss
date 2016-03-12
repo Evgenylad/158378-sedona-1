@@ -11,7 +11,7 @@
     display: block;
     margin: 0;
 
-    font-family: $alternate-font-bold;
+    font-family: $font-bold;
     color: $base-color-bold;
     font-size: 18px;
     line-height: 26px;
@@ -20,7 +20,7 @@
 
 .feedback-form__label {
   &--checkbox {
-    font-family: $alternate-font-bold;
+    font-family: $font-bold;
     color: $base-color-bold;
     font-size: 18px;
     line-height: 26px;
@@ -28,7 +28,7 @@
   }
 
   &--radio {
-    font-family: $alternate-font-bold;
+    font-family: $font-bold;
     color: $base-color-bold;
     font-size: 18px;
     line-height: 26px;

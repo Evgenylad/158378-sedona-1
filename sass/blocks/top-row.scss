@@ -14,10 +14,14 @@
 }
 
 .menu-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  float:right;
+  width: auto;
+  margin-top: 17px;
+  margin-right: 20px;
 
-  width: 23px;
-  height: 23px;
+  background-color: $base-background;
+  border: none;
+  &__image {
+  fill: $btn-background;
+  }
 }

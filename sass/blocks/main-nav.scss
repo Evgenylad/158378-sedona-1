@@ -7,13 +7,14 @@
     text-align: center;
   }
   &__item {
+    box-sizing: border-box;
     width: 100%;
     min-height: 26px;
 
     padding: 15px 15px;
 
     border-bottom: 1px solid #678fa8;
-    background-color: $btn-color-bg;
+    background-color: $btn-background;
   }
   &__link {
 
@@ -21,7 +22,7 @@
     font-size: 18px;
     line-height: 40px;
     text-decoration: none;
-    font-family: $alternate-font-bold;
-    color: $alternate-color;
+    font-family: $font-bold;
+    color: $secondary-color;
   }
 }
