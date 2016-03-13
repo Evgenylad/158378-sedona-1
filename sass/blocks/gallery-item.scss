@@ -14,3 +14,26 @@
     margin-bottom: 20px;
   }
 }
+
+
+@media (min-width: 768px) {
+  .gallery-item {
+    float: left;
+    margin: 0;
+    width: 45%;
+  }
+  .gallery-item:first-of-type {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-item {
+    float: left;
+    margin: 0;
+    width: 33%;
+  }
+  .gallery-item:first-of-type {
+    width: 100%;
+  }
+}

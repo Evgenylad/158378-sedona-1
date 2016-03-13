@@ -1,6 +1,12 @@
+.reason-row {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media (min-width: 768px)  {
   .reason-row {
-    width: 100%;
     @include clearfix;
   }
 }
