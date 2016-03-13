@@ -1,25 +1,6 @@
-@media (min-width: 321px)  {
+@media (min-width: 768px)  {
   .reason-row {
     width: 100%;
-    .reason {
-      float: left;
-
-      width: 33.33333333%;
-      min-height: 151px;
-
-      text-align: center;
-      line-height: 21px;
-      box-sizing: border-box;
-    }
-    .reason-image {
-      float: right;
-
-      width: 66.6666667%;
-      min-height: 256px;
-
-      margin: 0;
-
-      overflow: hidden;
-    }
+    @include clearfix;
   }
 }

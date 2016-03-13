@@ -1,4 +1,6 @@
 .reason {
+  display: block;
+  width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -23,5 +25,21 @@
   &__description {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .reason {
+    float: left;
+
+    width: 33.33333333%;
+    min-height: 151px;
+
+    text-align: center;
+    line-height: 21px;
+    box-sizing: border-box;
+    &--invert {
+      float: right;
+    }
   }
 }
