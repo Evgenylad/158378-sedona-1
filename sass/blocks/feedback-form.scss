@@ -84,6 +84,7 @@
       margin: 0 auto;
     }
     &__input-group {
+      width: 100%;
       &--checkbox {
         display: inline-block;
         width: 0.5*100%;
@@ -102,6 +103,7 @@
       }
       &--flexbox {
         display: flex;
+        flex-wrap: wrap;
       }
     }
     &__label {
@@ -110,6 +112,21 @@
       }
       &--radio {
         margin-left: 75px/768px*2*100%;
+      }
+      &--first {
+        order: 1;
+      }
+    }
+    &__input {
+      &--second {
+        width: 100%;
+        order: 3;
+      }
+    }
+    &__error {
+      &--third {
+        width: 50%;
+        order: 2;
       }
     }
   }
@@ -125,13 +142,25 @@
       &--half-width {
         width: 0.5*100%;
       }
-      &__label {
-        &--desktop-hidden {
-          display: none;
-        }
-        &--desktop-capitalized {
-          text-transform: capitalize;
-        }
+    }
+    &__label {
+      &--first {
+        order: 2;
+      }
+      &--desktop-hidden {
+        display: none;
+      }
+    }
+    &__input {
+      &--second {
+        width: 50%;
+        order: 3;
+      }
+    }
+    &__error {
+      &--third {
+        width: 100%;
+        order: 1;
       }
     }
   }
