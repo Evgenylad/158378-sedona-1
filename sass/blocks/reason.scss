@@ -1,6 +1,5 @@
 .reason {
-  padding-left: 20px;
-  padding-right: 20px;
+
   padding-top: 60px;
   padding-bottom: 45px;
   &__name {
@@ -29,7 +28,7 @@
   .reason {
     float: left;
 
-    width: 33.33333333%;
+    width: (100%)/3;
     min-height: 151px;
 
     text-align: center;
