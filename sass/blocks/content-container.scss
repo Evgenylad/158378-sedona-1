@@ -1,6 +1,6 @@
 @media (min-width: 768px)  {
   .content-container {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 60px/768px*100%;
+      padding-right: 60px/768px*100%;
   }
 }

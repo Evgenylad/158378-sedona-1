@@ -20,10 +20,16 @@
   .gallery-item {
     float: left;
     margin: 0;
-    width: 45%;
-  }
-  .gallery-item:first-of-type {
-    width: 100%;
+    width: 50%;
+    &__title {
+      text-align: left;
+    }
+    &__author {
+      text-align: left;
+    }
+    &:first-of-type {
+      width: 100%;
+    }
   }
 }
 
@@ -31,9 +37,9 @@
   .gallery-item {
     float: left;
     margin: 0;
-    width: 33%;
-  }
-  .gallery-item:first-of-type {
-    width: 100%;
+    width: 0.3*100%;
+    &:first-of-type {
+      width: 100%;
+    }
   }
 }

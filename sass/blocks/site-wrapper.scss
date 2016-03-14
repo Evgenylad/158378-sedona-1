@@ -18,5 +18,7 @@
 }
 
 @media (min-width: 1200px) {
-  width: 1200px;
+  .site-wrapper {
+    min-width: 1200px;
+  }
 }
