@@ -15,6 +15,14 @@
     font-size: 18px;
     line-height: 26px;
   }
+  &__input {
+    &--email {
+      width: 100%;
+    }
+    &--phone {
+      width: 100%;
+    }
+  }
   &__error {
     display: inline-block;
   }
@@ -25,26 +33,24 @@
   &__warning {
     display: none;
   }
-}
-
-.feedback-form__label {
-  &--checkbox {
-    font-family: $font-bold;
-    color: $base-color-bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-  }
-
-  &--radio {
-    font-family: $font-bold;
-    color: $base-color-bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-  }
-  &--hidden {
-    display: none;
+  &__label {
+    &--checkbox {
+      font-family: $font-bold;
+      color: $base-color-bold;
+      font-size: 18px;
+      line-height: 26px;
+      text-transform: none;
+    }
+    &--radio {
+      font-family: $font-bold;
+      color: $base-color-bold;
+      font-size: 18px;
+      line-height: 26px;
+      text-transform: none;
+    }
+    &--hidden {
+      display: none;
+    }
   }
 }
 
@@ -104,6 +110,7 @@
       &--flexbox {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
       }
     }
     &__label {
@@ -124,10 +131,8 @@
       }
     }
     &__error {
-      &--third {
         width: 50%;
         order: 2;
-      }
     }
   }
 }
@@ -144,7 +149,7 @@
       }
     }
     &__label {
-      &--first {
+      &--phone {
         order: 2;
       }
       &--desktop-hidden {
@@ -152,16 +157,20 @@
       }
     }
     &__input {
-      &--second {
-        width: 50%;
+      &--phone {
+        width: 66%;
+
+        margin-right: 16.66%;
         order: 3;
+      }
+      &--email {
+        width: 66%;
+        margin-left: 3.7%
       }
     }
     &__error {
-      &--third {
         width: 100%;
         order: 1;
-      }
     }
   }
 }
