@@ -12,11 +12,21 @@
     line-height: 26px;
   }
   &__description {
+    display: inline-block;
+    width: 244px;
     margin-bottom: 37px;
 
     line-height: 24px;
   }
   &__item {
     width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video {
+    &__description {
+      width: 427px;
+    }
   }
 }

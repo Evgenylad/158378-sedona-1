@@ -66,6 +66,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      align-items: flex-start;
       width: 100%;
 
       margin: 0;
@@ -84,13 +85,25 @@
     &__title {
       width: 100%;
       margin-bottom: 30px;
-      
-      text-align: left;
+      &--half-width {
+        text-align: left;
+      }
+      &--full-width {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     &__warning {
       display: inline-block;
       width: 0.5*100%;
       margin: 0 auto;
+    }
+    &__group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
     }
     &__input-group {
       display: flex;
@@ -100,6 +113,9 @@
       &--checkbox {
         display: inline-block;
         width: 0.5*100%;
+      }
+      &--name {
+        flex-wrap: nowrap;
       }
       &--first {
         order: 1;
@@ -115,6 +131,7 @@
       }
     }
     &__label {
+      padding-top: 17px;
       &--hidden {
         display: inline-block;
       }
@@ -126,6 +143,15 @@
       }
     }
     &__input {
+      box-sizing: border-box;
+      width: 100%;
+
+      margin-left: 14px;
+      margin-bottom: 20px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+
+      padding-left: 20px;
       &--second {
         width: 100%;
         order: 3;
@@ -140,6 +166,10 @@
 
 @media (min-width: 1200px) {
   .feedback-form {
+    &__group {
+      display: flex;
+      flex-wrap: wrap;
+    }
     &__input-group {
       &--checkbox {
         display: inline-block;
@@ -149,13 +179,18 @@
         width: 0.5*100%;
       }
       &--phone {
-        width: (400/1080)*100%;
+        width: (400/960)*100%;
       }
       &--email {
+        align-self: flex-end;
         width: 50%;
       }
     }
     &__label {
+      &--radio {
+        padding-bottom: 35px;
+        padding-top: 15px;
+      }
       &--phone {
         order: 2;
       }

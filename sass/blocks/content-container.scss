@@ -4,3 +4,10 @@
       padding-right: 60px/768px*100%;
   }
 }
+
+@media (min-width: 1200px)  {
+  .content-container {
+      padding-left: 120px/1200px*100%;
+      padding-right: 120px/1200px*100%;
+  }
+}
