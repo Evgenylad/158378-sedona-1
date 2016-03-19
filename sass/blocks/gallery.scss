@@ -1,4 +1,8 @@
 .gallery {
+  width: 280px;
+  display: block;
+
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 30px;
   &__title {
@@ -10,4 +14,11 @@
   &__description {
     margin: 0;
   }
+}
+
+@media (min-width: 768px)  {
+  .gallery {
+  width: 445px;
+  }
+
 }
