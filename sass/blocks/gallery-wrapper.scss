@@ -2,3 +2,16 @@
 .gallery-wrapper {
   padding: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-item {
+    padding: 0;
+  }
+}

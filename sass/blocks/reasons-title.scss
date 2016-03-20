@@ -1,4 +1,6 @@
 .reasons-title {
+  width: 260px;
+
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -11,7 +13,7 @@
     margin: 0;
     margin-bottom: 35px;
 
-    font-family: $alternate-font-bold;
+    font-family: $font-bold;
     color: $base-color-bold;
     font-size: 18px;
     line-height: 26px;
@@ -19,5 +21,14 @@
 
   &__description {
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-title {
+    width: 500px;
+
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 }

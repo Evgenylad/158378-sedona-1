@@ -1,0 +1,23 @@
+
+.reason-image {
+  height: 260px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+  background-color: #be7a5c;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reason-image {
+    float: right;
+
+    width: 2/3*100%;
+    height: 256px;
+
+    &--invert {
+      float: left;
+    }
+  }
+}

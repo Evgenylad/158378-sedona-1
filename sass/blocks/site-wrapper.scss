@@ -1,4 +1,24 @@
 .site-wrapper {
-  max-width: 320px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: $mobile-width)  {
+  .site-wrapper {
+    min-width: 320px;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: $tablet-width)  {
+  .site-wrapper {
+    min-width: 768px;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-wrapper {
+    min-width: 1200px;
+  }
 }

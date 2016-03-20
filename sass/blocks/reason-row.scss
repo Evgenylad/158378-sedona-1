@@ -1,0 +1,10 @@
+.reason-row {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width)  {
+  .reason-row {
+    @include clearfix;
+  }
+}

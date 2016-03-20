@@ -1,13 +1,24 @@
 .gallery {
+  width: 280px;
+  display: block;
+
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 30px;
   &__title {
     margin: 0;
     margin-bottom: 35px;
-    font-family: $alternate-font-bold;
+    font-family: $font-bold;
     color: $base-color-bold;
   }
   &__description {
     margin: 0;
   }
+}
+
+@media (min-width: $tablet-width)  {
+  .gallery {
+  width: 445px;
+  }
+
 }
