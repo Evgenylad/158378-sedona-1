@@ -1,0 +1,27 @@
+.page-slogan {
+  width: 100%;
+  height: 389px;
+  background-color: #386181;
+  background: url("../img/bg-back-mobile.jpg") no-repeat;
+  background-size: cover;
+  &--small {
+    height: 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-slogan {
+    height: 517px;
+    &--small {
+      height: 291px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-slogan {
+    &--small {
+      height: 300px;
+    }
+  }
+}

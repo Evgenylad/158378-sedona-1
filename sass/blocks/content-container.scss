@@ -1,13 +1,13 @@
-@media (min-width: 768px)  {
+@media (min-width: $tablet-width)  {
   .content-container {
-      padding-left: 60px/768px*100%;
-      padding-right: 60px/768px*100%;
+      padding-left: 60px/$tablet-width*100%;
+      padding-right: 60px/$tablet-width*100%;
   }
 }
 
-@media (min-width: 1200px)  {
+@media (min-width: $desktop-width)  {
   .content-container {
-      padding-left: 120px/1200px*100%;
-      padding-right: 120px/1200px*100%;
+      padding-left: 120px/$desktop-width*100%;
+      padding-right: 120px/$desktop-width*100%;
   }
 }

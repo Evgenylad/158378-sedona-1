@@ -18,7 +18,7 @@
   &__input-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     &--name {
       flex-wrap: nowrap;
@@ -61,6 +61,7 @@
     border: none;
   }
   &__error {
+    align-self: flex-end;
     margin-left: 20px;
 
     line-height: 26px;
@@ -77,9 +78,9 @@
   &__label {
     padding-top: 17px;
     &--checkbox {
-      margin-left: 75px/768px*2*100%;
-      padding-bottom: 35px;
-      padding-top: 15px;
+      margin-left: 80px;
+      margin-bottom: 35px;
+      margin-top: 15px;
 
       font-family: $font-bold;
       color: $base-color-bold;
@@ -88,7 +89,7 @@
       text-transform: none;
     }
     &--radio {
-      margin-left: 75px/768px*2*100%;
+      margin-left: 80px;
       padding-bottom: 35px;
       padding-top: 15px;
 
@@ -108,7 +109,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .feedback-form {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +118,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      align-items: flex-start;
+
       width: 100%;
 
       margin: 0;
@@ -153,12 +154,10 @@
     &__group {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       width: 100%;
     }
     &__input-group {
       &--checkbox {
-        display: inline-block;
         width: 0.5*100%;
       }
       &--first {
@@ -173,29 +172,38 @@
       &--fourth {
         order: 4;
       }
+      &--phone {
+        width: 100%;
+      }
+      &--email {
+        align-self: flex-end;
+        width: 100%;
+      }
     }
     &__label {
-      &--hidden {
-        display: inline-block;
-      }
-      &--first {
-        order: 1;
-      }
-    }
-    &__input {
-      &--second {
-        width: 100%;
-        order: 3;
+      &--phone {
+      margin-left: 20px;
+      padding-bottom: 10px;
       }
     }
     &__error {
         width: 50%;
+        order: 1;
+        text-align: right;
+    }
+    &__input {
         order: 2;
+        &--email {
+          margin-left: 20px;
+        }
+        &--phone {
+          margin-left: 20px;
+        }
     }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .feedback-form {
     &__group {
       display: flex;
@@ -203,7 +211,6 @@
     }
     &__input-group {
       &--checkbox {
-        display: inline-block;
         width: 0.25*100%;
       }
       &--half-width {
@@ -219,7 +226,11 @@
     }
     &__label {
       &--phone {
+        margin-left: 0;
         order: 2;
+      }
+      &--email {
+        margin-left: 0;
       }
       &--desktop-hidden {
         display: none;
@@ -238,6 +249,7 @@
     &__error {
         width: 100%;
         order: 1;
+        text-align: center;
     }
   }
 }

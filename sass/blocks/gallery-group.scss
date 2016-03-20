@@ -3,6 +3,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
+  &__item {
+    margin: 0;
+  }
   &__item-image {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -15,11 +18,9 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width:$tablet-width) {
   .gallery-group {
     &__item {
-      margin-left: 0;
-      margin-right: 0;
       &--full-width {
         width: 100%;
       }
@@ -28,6 +29,7 @@
       }
     }
     &__item-descripton {
+      background-color: #f2f2f2;
       display: flex;
       flex-wrap: wrap;
     }
@@ -56,7 +58,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .gallery-group {
     &__item {
       &--low-width {

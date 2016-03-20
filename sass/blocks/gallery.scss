@@ -16,7 +16,7 @@
   }
 }
 
-@media (min-width: 768px)  {
+@media (min-width: $tablet-width)  {
   .gallery {
   width: 445px;
   }

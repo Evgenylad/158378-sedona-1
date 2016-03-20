@@ -3,14 +3,14 @@
   margin: 0 auto;
 }
 
-@media (min-width: 320px)  {
+@media (min-width: $mobile-width)  {
   .site-wrapper {
     min-width: 320px;
     max-width: 768px;
   }
 }
 
-@media (min-width: 768px)  {
+@media (min-width: $tablet-width)  {
   .site-wrapper {
     min-width: 768px;
     max-width: 1200px;

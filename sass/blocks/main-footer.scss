@@ -1,5 +1,4 @@
 .main-footer {
-  display: inline-block;
   box-sizing: border-box;
   width: 100%;
   padding-left: 20px;
@@ -21,8 +20,9 @@
   }
 }
 
-@media (min-width: 768px)  {
+@media (min-width: $tablet-width)  {
   .main-footer {
+    @include clearfix;
     padding-left: 60px;
     padding-right: 60px;
     &__hash-tag {
