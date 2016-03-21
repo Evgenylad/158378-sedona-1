@@ -12,7 +12,7 @@
     line-height: 26px;
   }
   &__description {
-    width: 445px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 35px;
 
@@ -23,6 +23,8 @@
 
     width: 280px;
 
+    margin-bottom: 50px;
+
     font-size: 21px;
     line-height: 58px;
     text-transform: uppercase;
@@ -32,11 +34,23 @@
   }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .booking {
     &__btn {
       margin: 0 auto;
+      margin-bottom: 60px;
       width: 457px;
+    }
+    &__description {
+      width: 462px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking {
+    &__btn {
+      margin-bottom: 65px;
     }
   }
 }

@@ -96,7 +96,7 @@
       text-transform: none;
     }
     &--radio {
-      margin-left: 80px;
+      margin-left: 75px;
       padding-bottom: 35px;
       padding-top: 15px;
 
@@ -134,7 +134,7 @@
 
       border-bottom: none;
       &--half-width {
-        width: (400/1080)*100%;
+        width: 50%;
         border-top: none;
       }
       &--first {
@@ -198,9 +198,12 @@
     }
     &__label {
       &--hidden {
+        display: block;
         margin-left: 20px;
         padding-bottom: 10px;
-        display: block;
+      }
+      &--tablet-hidden {
+        display: none;
       }
     }
     &__error {
@@ -220,6 +223,7 @@
     &__group {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     &__input-group {
       &--checkbox {
@@ -246,6 +250,9 @@
       }
       &--desktop-hidden {
         display: none;
+      }
+      &--tablet-hidden {
+        display: inline-block;
       }
     }
     &__input {
