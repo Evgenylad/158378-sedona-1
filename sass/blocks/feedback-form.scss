@@ -49,9 +49,11 @@
     }
   }
   &__textarea {
+    box-sizing: border-box;
     width: 100%;
 
     padding-left: 20px;
+
     padding-top: 20px;
 
     font-family: $font-bold;
@@ -71,6 +73,11 @@
   &__btn {
     width: 40%;
     margin: 0 auto;
+
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: $font-bold;
+    color: $secondary-color;
   }
   &__warning {
     display: none;
@@ -141,15 +148,23 @@
         text-align: left;
       }
       &--full-width {
-        width: 30%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
       }
     }
-    &__warning {
-      display: inline-block;
-      width: 0.5*100%;
+    &__btn {
+      width: 50%;
       margin: 0 auto;
+    }
+    &__warning {
+      display: block;
+      align-self: center;
+      width: 50%;
+
+      margin: 0 auto;
+
+      text-align: right;
     }
     &__group {
       display: flex;
@@ -157,6 +172,7 @@
       width: 100%;
     }
     &__input-group {
+      justify-content: space-between;
       &--checkbox {
         width: 0.5*100%;
       }
@@ -181,24 +197,20 @@
       }
     }
     &__label {
-      &--phone {
-      margin-left: 20px;
-      padding-bottom: 10px;
+      &--hidden {
+        margin-left: 20px;
+        padding-bottom: 10px;
+        display: block;
       }
     }
     &__error {
         width: 50%;
         order: 1;
+        padding-bottom: 10px;
         text-align: right;
     }
     &__input {
         order: 2;
-        &--email {
-          margin-left: 20px;
-        }
-        &--phone {
-          margin-left: 20px;
-        }
     }
   }
 }
@@ -240,10 +252,14 @@
       &--phone {
         width: (314/400)*100%;
 
+        margin-left: 20px;
+
         order: 3;
       }
       &--email {
         width: (314/480)*100%;
+
+        margin-left: 20px;
       }
     }
     &__error {
