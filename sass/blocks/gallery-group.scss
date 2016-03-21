@@ -29,29 +29,27 @@
         width: 50%;
       }
     }
-    &__item-descripton {
+    &__item-bottom-row {
       background-color: #f2f2f2;
       display: flex;
       flex-wrap: wrap;
     }
-    &__item-title {
-      width: 50%;
-      order: -1;
-
+    &__item-descripton {
+      width: 80%;
+    }
+    &__title {
       font-family: $font-bold;
       line-height: 24px;
       text-transform: uppercase;
     }
     &__item-author {
-      width: 50%;
-      order: 1;
 
       font-family: $font;
       line-height: 24px;
     }
     &__item-likes {
       box-sizing: border-box;
-      width: 42%;
+      width: 20%;
       padding-right: (35/400)*100%;
 
       text-align: right;
