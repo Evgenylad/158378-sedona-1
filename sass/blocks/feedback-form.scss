@@ -18,7 +18,7 @@
   &__input-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     &--name {
       flex-wrap: nowrap;
@@ -71,7 +71,7 @@
     color: #ff5c5c;
   }
   &__btn {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
 
     font-size: 21px;
@@ -136,6 +136,12 @@
       &--half-width {
         width: 50%;
         border-top: none;
+        align-self: flex-start;
+        &:first-child {
+          box-sizing: border-box;
+          padding-left: (60px/$tablet-width)*100%;
+          border-left: 1px solid #dbdbdb;
+        }
       }
       &--first {
         order: -1;
@@ -144,11 +150,13 @@
     &__title {
       width: 100%;
       margin-bottom: 30px;
+
+      font-size: 21px;
       &--half-width {
         text-align: left;
       }
       &--full-width {
-        width: 40%;
+        width: 45%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -269,10 +277,16 @@
         margin-left: 20px;
       }
     }
+    &__title {
+      &--full-width {
+        width: 40%;
+      }
+    }
     &__error {
         width: 100%;
+        align-self: center;
         order: 1;
         text-align: center;
+      }
     }
   }
-}

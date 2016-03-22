@@ -55,7 +55,7 @@
   .reason {
     &--gray {
       position: relative;
-      &:not(last-child)::after {
+      &:not(:last-child)::after {
         content: "";
         position: absolute;
         bottom: 0;
