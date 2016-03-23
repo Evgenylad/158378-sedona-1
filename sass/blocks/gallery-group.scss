@@ -1,6 +1,5 @@
 .gallery-group {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
   &__item {
@@ -21,7 +20,9 @@
     text-align: left;
   }
   &__item-likes {
+    display: block;
     margin-left: 37px;
+    text-align: left;
   }
   &__item-link {
     text-decoration: none;
@@ -69,6 +70,7 @@
       line-height: 24px;
     }
     &__item-likes {
+      display: inline;
       align-self: center;
       width: 54px;
 
@@ -106,13 +108,7 @@
       line-height: 24px;
     }
     &__item-likes {
-      align-self: center;
-      width: 54px;
-
-      padding-right: (35/400)*100%;
-
       color: $secondary-color;
-      text-align: right;
     }
   }
 }
