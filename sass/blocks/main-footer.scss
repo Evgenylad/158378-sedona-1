@@ -54,6 +54,7 @@
 
       margin: 0;
 
+      font-style: normal;
       text-align: right;
       &__logo {
         margin-left: 12px;
@@ -78,8 +79,6 @@
       width: (400px/$desktop-width)*100%;
 
       padding-right: 44px;
-
-
     }
   }
 }
