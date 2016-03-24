@@ -106,10 +106,11 @@
       line-height: 26px;
       text-transform: none;
     }
-    &--hidden {
-      display: none;
-    }
     &--email {
+      margin-left: 20px;
+      padding-bottom: 10px;
+    }
+    &--phone {
       margin-left: 20px;
       padding-bottom: 10px;
     }
@@ -210,6 +211,8 @@
         margin-left: 20px;
         padding-bottom: 10px;
       }
+    }
+    &__header {
       &--tablet-hidden {
         display: none;
       }
