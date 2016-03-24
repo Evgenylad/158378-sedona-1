@@ -28,21 +28,13 @@
 
 @media (min-width: $tablet-width)  {
   .top-row {
-    width: 20%;
-
-    top: -56px;
-    left: 50%;
-
-    padding: 15px;
-
-    transform: translateX(-25%);
+    position: static;
+    min-height: auto;
   &__logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
 
-    width: 23px;
-    height: 23px;
     }
   }
   .menu-toggle {

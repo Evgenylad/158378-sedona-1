@@ -11,3 +11,14 @@
     fill: $secondary-color;
   }
 }
+
+.btn {
+
+  &--large {
+    height: 58px;
+    border: none;
+  }
+  &--blue {
+    background-color: #81b3d2;
+  }
+}

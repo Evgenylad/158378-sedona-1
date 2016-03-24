@@ -1,6 +1,20 @@
 .popup-form {
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  min-height: 150px;
   padding: 45px;
   padding-bottom: 35px;
+  &--sent {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  &__btn-block {
+    background-color: #f2f2f2;
+  }
+  &__text-block {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
   &__title {
     margin-bottom: 31px;
 
@@ -10,7 +24,61 @@
     line-height: 26px;
   }
   &__description {
+
     margin-bottom: 24px;
     line-height: 24px;
+  }
+  &__btn {
+    width: 180px;
+    height: 58px;
+
+    font-family: $font-bold;
+    color: $secondary-color;
+    font-size: 18px;
+    line-height: 26px;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+.popup-form {
+  min-height: 350px;
+  &--error {
+    box-sizing: border-box;
+    width: 400px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+  &--sent {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    width: 643px;
+  }
+  &__text-block {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  &__btn-block {
+    height: 147px;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 40px;
+    &--error {
+      width: 235px;
+      }
+    }
+  &__btn {
+    width: 400px;
+    width: 272px;
+    &--sent {
+      width: 458px;
+
+      margin-top: 45px;
+    }
+    }
   }
 }

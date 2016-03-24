@@ -1,0 +1,11 @@
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 48px;
+
+  margin-right: 7px;
+  &__icon {
+    margin-top: 15px;
+  }
+}
