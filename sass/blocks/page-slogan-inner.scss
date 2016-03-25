@@ -1,15 +1,14 @@
-.page-slogan {
+.page-slogan-inner {
   position: relative;
-  width: 100%;
-  height: 390px;
+  height: 160px;
+
   background-color: #386181;
   background: url("../img/bg-back-mobile.jpg") no-repeat;
   background-size: cover;
-
   &::after {
     content: "";
     position: absolute;
-    top: 349px;
+    top: 120px;
     left: 0;
 
     width: 100%;
@@ -21,44 +20,27 @@
   &__img {
     box-sizing: border-box;
     width: 100%;
-    height: auto;
 
-    margin-top: 90px;
-    padding-left: (20px/$mobile-width)*100%;
-    padding-right: (20px/$mobile-width)*100%;
+    margin-top: 52px;
   }
   @media (min-resolution: 144dpi),
          (min-resolution: 1.5dppx) {
-    .page-slogan {
+    .page-slogan-inner {
       background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .page-slogan {
-    height: 518px;
+  .page-slogan-inner {
+    height: 291px;
     background: url("../img/bg-back-desktop.jpg") no-repeat;
-    &--small {
-      height: 291px;
-    }
     &::after {
-      top: 462px;
-
-      height: 57px;
+      top: 235px;
 
       background-image: url("../img/bg-intro-triangle-tablet.svg");
-      background-size: 100% 58px;
     }
     &__img {
-      width: 100%;
-      height: auto;
-
-      margin-top: 78px;
-      padding-left: (154px/$tablet-width)*100%;
-      padding-right: (154px/$tablet-width)*100%;
-    }
-    &__img-inner {
       width: 100%;
       height: auto;
 
@@ -76,18 +58,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-slogan {
-    &--small {
+  .page-slogan-inner {
       height: 300px;
-    }
     &::after {
+      top: 244px;
       background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
     &__img {
-      padding-left: (370px/$desktop-width)*100%;
-      padding-right: (370px/$desktop-width)*100%;
-    }
-    &__img-inner {
       margin-top: 100px;
       padding-left: (370px/$desktop-width)*100%;
       padding-right: (370px/$desktop-width)*100%;

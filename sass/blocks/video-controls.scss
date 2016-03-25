@@ -84,8 +84,6 @@
     background-color: rgba(76, 70, 68, 0.6);
 
     &__items {
-      width: (390px/$mobile-width)*100%;
-      min-height: auto;
       background-color: transparent;
     }
     &__scale {
@@ -135,6 +133,9 @@
       padding-top: 5px;
 
       border: none;
+    }
+    &__icon {
+      fill: #ffffff;
     }
   }
 }
