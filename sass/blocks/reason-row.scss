@@ -1,5 +1,13 @@
+.reason-row {
+  &--icon {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: $tablet-width)  {
   .reason-row {
+    flex-direction: row;
     @include clearfix;
   }
 }

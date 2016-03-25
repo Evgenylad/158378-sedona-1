@@ -26,6 +26,54 @@
     padding-left: 70px;
     text-align: left;
   }
+  &--icon-house {
+    position: relative;
+    order: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 20px;
+
+      width: 40px;
+      height: 40px;
+
+      background: url("../img/icon-house.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+  &--icon-gift{
+    position: relative;
+    order: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 20px;
+
+      width: 40px;
+      height: 40px;
+
+      background: url("../img/icon-gift.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+  &--icon-burger {
+    position: relative;
+    order: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 20px;
+
+      width: 40px;
+      height: 40px;
+
+      background: url("../img/icon-burger.svg") no-repeat;
+      background-size: contain;
+    }
+  }
   &__name {
     margin: 0;
     margin-bottom: 13px;
@@ -97,6 +145,41 @@
       min-height: 330px;
 
       padding-top: 164px;
+    }
+    &--icon-house {
+      &::before {
+        top: 57px;
+        left: 50%;
+
+        width: 72px;
+        height: 77px;
+
+        transform: translateX(-50%);
+      }
+    }
+    &--icon-gift{
+      order: 2;
+      &::before {
+        top: 57px;
+        left: 50%;
+
+        width: 72px;
+        height: 77px;
+
+        transform: translateX(-50%);
+      }
+    }
+    &--icon-burger {
+      order: 1;
+      &::before {
+        top: 63px;
+        left: 50%;
+
+        width: 72px;
+        height: 77px;
+
+        transform: translateX(-50%);
+      }
     }
     &--gray {
       min-height: 256px;
