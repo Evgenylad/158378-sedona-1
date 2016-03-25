@@ -1,11 +1,11 @@
 .video-controls {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
   position: absolute;
   left: 0;
-  bottom: -60px;
+  bottom: 0;
   width: (280px/$mobile-width)*100%;
 
   margin-left: (20px/$mobile-width)*100%;
@@ -38,35 +38,38 @@
     background-color: #ffffff;
   }
   &__replay {
-    width: 25%;
+    width: 10%;
     order: 1;
 
+    margin-left: (25px/$mobile-width)*100%;
     padding: 0;
 
     border: none;
     line-height: 66px;
-    background-color: #f2f2f2;
+    background-color: transparent;
   }
   &__subtitles {
-    width: 50%;
+    width: 12%;
     order: 2;
 
+    margin-left: (100px/$mobile-width)*100%;
     padding: 0;
 
     border: none;
     text-align: right;
     line-height: 66px;
-    background-color: #f2f2f2;
+    background-color: transparent;
   }
   &__fullscreen {
-    width: 25%;
+    width: 10%;
     order: 3;
 
+    margin-right: (25px/$mobile-width)*100%;
     padding: 0;
 
     border: none;
     line-height: 66px;
-    background-color: #f2f2f2;
+    background-color: transparent;
   }
 }
 
@@ -78,10 +81,12 @@
 
     min-height: 92px;
 
+    background-color: rgba(76, 70, 68, 0.6);
+
     &__items {
       width: (390px/$mobile-width)*100%;
       min-height: auto;
-      background-color: rgba(76, 70, 68, 0.6);
+      background-color: transparent;
     }
     &__scale {
       width: 84%;
@@ -104,36 +109,32 @@
       background-color: #ffffff;
     }
     &__replay {
-      width: 25%;
       order: -1;
 
+      margin-left: (35px/$tablet-width)*100%;
       padding: 0;
       padding-top: 5px;
 
       border: none;
-
-      background-color: rgba(76, 70, 68, 0.6);
     }
     &__subtitles {
-      width: 50%;
       order: 1;
 
+      margin-left: (35px/$tablet-width)*100%;
       padding: 0;
       padding-top: 5px;
 
       border: none;
       text-align: right;
-      background-color: rgba(76, 70, 68, 0.6);
     }
     &__fullscreen {
-      width: 25%;
       order: 2;
 
+      margin-left: (40px/$tablet-width)*100%;
       padding-right: 10px;
       padding-top: 5px;
 
       border: none;
-      background-color: rgba(76, 70, 68, 0.6);
     }
   }
 }
