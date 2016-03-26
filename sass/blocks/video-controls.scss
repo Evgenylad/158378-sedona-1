@@ -77,11 +77,11 @@
   .video-controls {
     flex-wrap: nowrap;
     left: 0;
-    bottom: 0;
+    bottom: 93px;
 
     min-height: 92px;
 
-    background-color: rgba(76, 70, 68, 0.6);
+    background-color: rgba(76, 73, 71, 0.6);
 
     &__items {
       background-color: transparent;
@@ -136,6 +136,34 @@
     }
     &__icon {
       fill: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-controls {
+
+    &__items {
+      background-color: transparent;
+    }
+    &__scale {
+      width: 95%;
+      height: 4px;
+
+      margin: 0 auto;
+      margin-top: 43px;
+    }
+
+    &__replay {
+      margin-left: (35px/$desktop-width)*100%;
+    }
+    &__subtitles {
+      margin-left: 0;
+      margin-right: (30px/$desktop-width)*100%;
+    }
+    &__fullscreen {
+      margin-left: 0;
+      margin-right: (40px/$desktop-width)*100%;
     }
   }
 }

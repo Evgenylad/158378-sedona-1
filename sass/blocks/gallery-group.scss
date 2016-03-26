@@ -21,13 +21,15 @@
     text-align: left;
   }
   &__item-likes {
-    display: block;
     margin-left: 37px;
     text-align: left;
   }
   &__item-link {
     text-decoration: none;
     font-size: 0;
+  }
+  &__likes-image-path {
+    fill: #a9a9a9;
   }
 }
 
@@ -42,7 +44,12 @@
       }
     }
     &__item-image {
+      width: 100%;
+      height: 267px;
       margin-top: 0;
+      &--fullwidth {
+        height: 400px;
+      }
     }
     &__item-bottom-row {
       display: flex;
@@ -71,13 +78,14 @@
       line-height: 24px;
     }
     &__item-likes {
-      display: inline;
+      display: flex;
       align-self: center;
-      width: 54px;
+      width: 85px;
 
       margin-left: 0;
-
-      text-align: left;
+    }
+    &__likes-image {
+      margin-right: 10px;
     }
   }
 }
@@ -110,6 +118,9 @@
     }
     &__item-likes {
       color: $secondary-color;
+    }
+    &__likes-image-path {
+      fill: #ffffff;
     }
   }
 }
