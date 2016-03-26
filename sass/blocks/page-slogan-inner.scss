@@ -15,7 +15,7 @@
     height: 57px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-size: 100% 57px;
+    background-size: 100% 58px;
   }
   &__img {
     box-sizing: border-box;
@@ -36,7 +36,7 @@
     height: 291px;
     background: url("../img/bg-back-desktop.jpg") no-repeat;
     &::after {
-      top: 235px;
+      top: 236px;
 
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
@@ -61,8 +61,10 @@
   .page-slogan-inner {
       height: 300px;
     &::after {
-      top: 244px;
+      top: 243px;
       background-image: url("../img/bg-intro-triangle-desktop.svg");
+      background-size: 1200px 57px;
+      background-position: center;
     }
     &__img {
       margin-top: 100px;

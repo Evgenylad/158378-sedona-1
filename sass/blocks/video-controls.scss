@@ -15,7 +15,7 @@
     width: 100%;
     min-height: 45px;
 
-    background-color: rgba(76, 70, 68, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
   }
   &__scale {
     width: 84%;
@@ -76,12 +76,14 @@
 @media (min-width: $tablet-width) {
   .video-controls {
     flex-wrap: nowrap;
-    left: 0;
+    left: (60px/$tablet-width)*100%;
     bottom: 93px;
-
+    width: (648px/$tablet-width)*100%;
     min-height: 92px;
 
-    background-color: rgba(76, 73, 71, 0.6);
+    margin: 0 auto;
+
+    background-color: rgba(0, 0, 0, 0.6);
 
     &__items {
       background-color: transparent;

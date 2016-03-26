@@ -6,6 +6,9 @@
     border: none;
     border-bottom: 1px solid #e5e5e5;
   }
+  &__group {
+    position: relative;
+  }
   &__title {
     margin: 0;
     margin-bottom: 25px;
@@ -185,6 +188,36 @@
       padding-bottom: 10px;
     }
   }
+  &__inner-label {
+    position: absolute;
+    top: 16px;
+
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    &--name {
+      left: 70px;
+    }
+    &--surname {
+      left: 105px;
+    }
+    &--secondname {
+      left: 105px;
+    }
+    &--phone {
+      left: 105px;
+      top: 52px;
+    }
+    &--email {
+      left: 185px;
+    }
+    &--textarea {
+      top: 10px;
+      left: 20px;
+      text-align: left;
+    }
+  }
 }
 
 input[type="checkbox"]:checked ~ .feedback-form__image {
@@ -192,6 +225,12 @@ input[type="checkbox"]:checked ~ .feedback-form__image {
 }
 input[type="radio"]:checked ~ .feedback-form__image-container::after {
   display: block;
+}
+input.feedback-form__input:focus + .feedback-form__inner-label {
+  display: none;
+}
+.feedback-form__textarea:focus + .feedback-form__inner-label {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -234,9 +273,32 @@ input[type="radio"]:checked ~ .feedback-form__image-container::after {
         text-align: left;
       }
       &--full-width {
+        position: relative;
         width: 45%;
         margin-left: auto;
         margin-right: auto;
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: -175px;
+
+          width: 43%;
+          height: 1px;
+
+          background-color: #282828;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 340px;
+
+          width: 43%;
+          height: 1px;
+
+          background-color: #282828;
+        }
       }
     }
     &__btn {
@@ -366,13 +428,23 @@ input[type="radio"]:checked ~ .feedback-form__image-container::after {
     &__title {
       &--full-width {
         width: 40%;
+        &::before {
+
+          left: -75%;
+
+          width: 73%;
+        }
+        &::after {
+
+          left: 102%;
+
+          width: 73%;
+        }
       }
     }
     &__error {
         width: 100%;
-        align-self: center;
         order: 1;
-        text-align: center;
       }
     }
   }

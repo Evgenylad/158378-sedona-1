@@ -69,17 +69,20 @@
             <div class="feedback-form__group">
               <div class="feedback-form__input-group feedback-form__input-group--name">
                 <label class="feedback-form__label" for="name">Имя:</label>
-                <input class="feedback-form__input  feedback-form__input--name" type="text" name="name" id="name" value="Петр">
+                <input class="feedback-form__input  feedback-form__input--name" type="text" name="name" id="name">
+                <label class="feedback-form__inner-label  feedback-form__inner-label--name" for="name">Петр</label>
               </div>
 
               <div class="feedback-form__input-group  feedback-form__input-group--name">
                 <label class="feedback-form__label" for="surname">Фамилия:</label>
-                <input class="feedback-form__input  feedback-form__input--name" type="text" name="surname" id="surname" value="Иванов">
+                <input class="feedback-form__input  feedback-form__input--name" type="text" name="surname" id="surname">
+                <label class="feedback-form__inner-label  feedback-form__inner-label--surname" for="surname">Иванов</label>
               </div>
 
               <div class="feedback-form__input-group feedback-form__input-group--name">
                 <label class="feedback-form__label  feedback-form__label--uppercase" for="secondname">Отчество:</label>
-                <input class="feedback-form__input  feedback-form__input--name" type="text" name="secondname" id="surname" value="Александрович">
+                <input class="feedback-form__input  feedback-form__input--name" type="text" name="secondname" id="secondname">
+                <label class="feedback-form__inner-label  feedback-form__inner-label--secondname" for="secondname">Александрович</label>
               </div>
             </div>
           </div>
@@ -92,13 +95,15 @@
                 <label class="feedback-form__label  feedback-form__label--phone feedback-form__label--hidden" for="phone">
                     <span class="feedback-form__label  feedback-form__label--desktop-hidden">Контактный</span> телефон:
                 </label>
-                <input class="feedback-form__input  feedback-form__input--phone" type="tel" name="phone" id="phone" value="Введите номер">
+                <input class="feedback-form__input  feedback-form__input--phone" type="tel" name="phone" id="phone">
+                <label class="feedback-form__inner-label  feedback-form__inner-label--phone" for="phone">Введите телефон</label>
                 <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
               </div>
 
               <div class="feedback-form__input-group  feedback-form__input-group--email">
                 <label class="feedback-form__label  feedback-form__label--email" for="email">Электронная почта:</label>
-                <input class="feedback-form__input  feedback-form__input--email" type="email" name="email" id="email" value="Введите email">
+                <input class="feedback-form__input  feedback-form__input--email" type="email" name="email" id="email">
+                <label class="feedback-form__inner-label  feedback-form__inner-label--email" for="email">Введите email</label>
               </div>
             </div>
           </div>
@@ -185,7 +190,8 @@
             <div class="feedback-form__title  feedback-form__title--full-width">Опишите свои эмоции:</div>
 
             <div class="feedback-form__group">
-              <textarea class="feedback-form__textarea" name="emotions" rows="5">Опишите подробно все свои восторги</textarea>
+              <textarea class="feedback-form__textarea" name="emotions" rows="5" id="textarea"></textarea>
+              <label class="feedback-form__inner-label  feedback-form__inner-label--textarea" for="textarea">Опишите подробно все свои восторги</label>
             </div>
           </div>
 
