@@ -19,7 +19,7 @@
           </button>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--current" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">HTML Academy</a></li>
@@ -60,9 +60,9 @@
         </div>
 
         <div class="reason-row">
-          <div class="reason  reason--blue">
+          <div class="reason  reason--blue  reason--blue-first">
             <h2 class="reason__name">Настоящий городок</h2>
-            <span class="reason__number">№1</span>
+            <span class="reason__number  reason__number--blue">№1</span>
             <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
 
@@ -73,54 +73,54 @@
 
         <div class="reason-row  reason-row--icon">
           <div class="reason  reason--icon  reason--icon-house">
-            <h2 class="reason__name">Жилье</h2>
+            <h2 class="reason__name  reason__name--icon">Жилье</h2>
             <p class="reason__description">Рекомендуем пожить в настоящем
               мотеле, все как в кино!</p>
           </div>
 
           <div class="reason  reason--icon  reason--icon-burger">
-            <h2 class="reason__name">Еда</h2>
+            <h2 class="reason__name  reason__name--icon">Еда</h2>
             <p class="reason__description">Всегда заказывай фирменный бургер,
             вы не разочаруетесь!</p>
           </div>
 
           <div class="reason  reason--icon  reason--icon-gift">
-            <h2 class="reason__name">Сувениры</h2>
+            <h2 class="reason__name  reason__name--icon">Сувениры</h2>
             <p class="reason__description">Не только китайского,
             но и местного производства!</p>
           </div>
         </div>
 
         <div class="reason-row">
-          <div class="reason-image  reason-image--invert">
-            <img class="reason-image__item" src="img/photo-bridge.jpg"  width="800" height="400" alt="" />
-          </div>
-
           <div class="reason  reason--invert  reason--blue">
             <h2 class="reason__name">Там есть мост дьявола</h2>
-            <span class="reason__number">№2</span>
+            <span class="reason__number  reason__number--blue">№2</span>
             <p class="reason__description">Да, по нему можно пройти!
                Если конечно вы осмелитесь</p>
+          </div>
+
+          <div class="reason-image  reason-image--invert">
+            <img class="reason-image__item" src="img/photo-bridge.jpg"  width="800" height="400" alt="" />
           </div>
         </div>
 
         <div class="reason-row">
           <div class="reason  reason--gray">
             <h2 class="reason__name">Небольшая площадь</h2>
-            <span class="reason__number">№3</span>
+            <span class="reason__number  reason__number--gray">№3</span>
             <p class="reason__description">Все достопримечательности находятся очень близко</p>
           </div>
 
           <div class="reason  reason--gray">
             <h2 class="reason__name">Красивая дорога</h2>
-            <span class="reason__number">№4</span>
+            <span class="reason__number  reason__number--gray">№4</span>
             <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем
               не скучно</p>
           </div>
 
           <div class="reason  reason--gray">
             <h2 class="reason__name">Мало туристов</h2>
-            <span class="reason__number">№5</span>
+            <span class="reason__number  reason__number--gray">№5</span>
             <p class="reason__description">Большинство едет в Гранд-Каньон и
               толпится там</p>
           </div>
@@ -140,6 +140,12 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet.jpg">
               <img class="map__image" src="img/bg-map-mobile.jpg" width="320" height="350" alt="Map">
             </picture>
+
+            <svg class="map__map-marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+            </svg>
           </div>
         </div>
       </main>

@@ -17,8 +17,8 @@
 .menu-toggle {
   float:right;
   width: auto;
-  margin-top: 17px;
-  margin-right: 20px;
+  margin-top: 14px;
+  margin-right: 15px;
 
   background-color: $base-background;
   border: none;
@@ -31,16 +31,25 @@
   .top-row {
     position: static;
     min-height: auto;
-  &__logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
 
-    width: 194px;
-    height: 95px;
+      width: 102px;
+      height: 91px;
+      }
     }
-  }
   .menu-toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-row {
+    &__logo {
+      width: 193px;
+      height: 96px;
+    }
   }
 }

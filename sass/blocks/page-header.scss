@@ -3,3 +3,9 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktop-width)  {
+  .page-header {
+    margin-bottom: 35px;
+  }
+}

@@ -7,8 +7,8 @@
   &__hash-tag {
     display: block;
 
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 32px;
+    margin-top: 0;
 
     font-family: $font-bold;
     color: $base-color-bold;
@@ -58,7 +58,7 @@
       text-align: center;
     }
     .copyright {
-      align-self: center;
+      justify-content:flex-end; 
       width: (196/648)*100%;
 
       margin: 0;

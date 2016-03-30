@@ -16,6 +16,11 @@
     width: 2/3*100%;
     height: 256px;
 
+    display: flex;
+    &__item {
+    align-self: flex-start;
+    }
+
     &--invert {
       float: left;
     }

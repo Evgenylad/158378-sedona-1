@@ -1,15 +1,16 @@
 .page-slogan {
   position: relative;
   width: 100%;
-  height: 390px;
+  height: 387px;
   background-color: #386181;
   background: url("../img/bg-back-mobile.jpg") no-repeat;
   background-size: cover;
+  background-position: bottom;
 
   &::after {
     content: "";
     position: absolute;
-    top: 349px;
+    top: 347px;
     left: 0;
 
     width: 100%;
@@ -37,7 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .page-slogan {
-    height: 518px;
+    min-height: 518px;
     background: url("../img/bg-back-desktop.jpg") no-repeat;
     &--small {
       height: 291px;

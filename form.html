@@ -21,7 +21,7 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--current" href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">HTML Academy</a></li>
           </ul>
         </nav>
@@ -103,7 +103,7 @@
               <div class="feedback-form__input-group  feedback-form__input-group--email">
                 <label class="feedback-form__label  feedback-form__label--email" for="email">Электронная почта:</label>
                 <input class="feedback-form__input  feedback-form__input--email" type="email" name="email" id="email">
-                <label class="feedback-form__inner-label  feedback-form__inner-label--email" for="email">Введите email</label>
+                <label class="feedback-form__inner-label  feedback-form__inner-label--email" for="email">Введите e-mail</label>
               </div>
             </div>
           </div>
@@ -111,58 +111,52 @@
           <div class="feedback-form__item  feedback-form__item--half-width feedback-form__item--first">
             <div class="feedback-form__title  feedback-form__title--half-width">Ваше общее впечатление:</div>
 
-            <div class="feedback-form__group">
+            <div class="feedback-form__group  feedback-form__group--radio">
               <div class="feedback-form__input-group">
                 <input class="feedback-form__input  feedback-form__input--radio" type="radio" name="radio" id="good" checked hidden>
-                <i class="feedback-form__image-container  feedback-form__image-container--radio"></i>
                 <label class="feedback-form__label  feedback-form__label--radio" for="good">Скорее положительное</label>
               </div>
 
               <div class="feedback-form__input-group">
                 <input class="feedback-form__input  feedback-form__input--radio" type="radio" name="radio" id="bad" hidden>
-                <i class="feedback-form__image-container  feedback-form__image-container--radio"></i>
                 <label class="feedback-form__label  feedback-form__label--radio" for="bad">Скорее отрицательное</label>
               </div>
 
               <div class="feedback-form__input-group">
                 <input class="feedback-form__input  feedback-form__input--radio" type="radio" name="radio" id="noanswer" hidden>
-                <i class="feedback-form__image-container  feedback-form__image-container--radio"></i>
                 <label class="feedback-form__label  feedback-form__label--radio" for="noanswer">Затрудняюсь ответить</label>
               </div>
             </div>
           </div>
 
           <div class="feedback-form__item">
-            <div class="feedback-form__title  feedback-form__title--full-width">Посещенные достопримечательности:</div>
+            <div class="feedback-form__title  feedback-form__title--checkbox  feedback-form__title--full-width">Посещенные достопримечательности:</div>
 
-            <div class="feedback-form__group">
+            <div class="feedback-form__group  feedback-form__group--checkbox">
               <div class="feedback-form__input-group  feedback-form__input-group--checkbox  feedback-form__input-group--first">
                 <input class="feedback-form__input  feedback-form__input--checkbox" type="checkbox" name="bridge" id="bridge" hidden checked>
-                <i class="feedback-form__image-container  feedback-form__image-container--checkbox"></i>
                 <svg class="feedback-form__image  feedback-form__image--checkbox" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                 <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0
                   L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246
                   l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
                 </svg>
-                <label class="feedback-form__label  feedback-form__label--checkbox" for="bridge">Мост дьявола</label>
+                <label class="feedback-form__label  feedback-form__label--checkbox  feedback-form__label--first" for="bridge">Мост Дьявола</label>
               </div>
 
               <div class="feedback-form__input-group  feedback-form__input-group--checkbox  feedback-form__input-group--third">
                 <input class="feedback-form__input  feedback-form__input--checkbox" type="checkbox" name="park" id="park" hidden checked>
-                <i class="feedback-form__image-container  feedback-form__image-container--checkbox"></i>
                 <svg class="feedback-form__image  feedback-form__image--checkbox" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                 <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0
                   L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246
                   l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
                 </svg>
-                <label class="feedback-form__label  feedback-form__label--checkbox" for="park">Слайд-парк</label>
+                <label class="feedback-form__label  feedback-form__label--checkbox  feedback-form__label--third" for="park">Слайд-парк</label>
               </div>
 
               <div class="feedback-form__input-group  feedback-form__input-group--checkbox  feedback-form__input-group--second">
                 <input class="feedback-form__input  feedback-form__input--checkbox" type="checkbox" name="hill" id="hill" hidden checked>
-                <i class="feedback-form__image-container  feedback-form__image-container--checkbox"></i>
                 <svg class="feedback-form__image  feedback-form__image--checkbox" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                 <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0
@@ -174,7 +168,6 @@
 
               <div class="feedback-form__input-group feedback-form__input-group--checkbox  feedback-form__input-group--fourth">
                 <input class="feedback-form__input  feedback-form__input--checkbox" type="checkbox" name="redrocks" id="redrocks" hidden checked>
-                <i class="feedback-form__image-container  feedback-form__image-container--checkbox"></i>
                 <svg class="feedback-form__image  feedback-form__image--checkbox" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                 <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0
@@ -186,8 +179,8 @@
             </div>
           </div>
 
-          <div class="feedback-form__item">
-            <div class="feedback-form__title  feedback-form__title--full-width">Опишите свои эмоции:</div>
+          <div class="feedback-form__item  feedback-form__item--textarea">
+            <div class="feedback-form__title  feedback-form__title--textarea  feedback-form__title--full-width">Опишите свои эмоции:</div>
 
             <div class="feedback-form__group">
               <textarea class="feedback-form__textarea" name="emotions" rows="5" id="textarea"></textarea>

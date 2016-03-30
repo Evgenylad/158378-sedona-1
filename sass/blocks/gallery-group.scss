@@ -1,9 +1,16 @@
 .gallery-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
+
   &__item {
-    margin: 0;
+    margin: 0 auto;
+    padding-left: (20px/$mobile-width)*100%;
+    padding-right: (20px/$mobile-width)*100%;
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #e5e5e5;
   }
   &__item-image {
     display: block;
@@ -11,22 +18,30 @@
     background-color: #1d322b;
   }
   &__item-bottom-row {
-    margin-top: 20px;
+    margin-top: 18px;
   }
   &__item-title {
+    margin-bottom: 3px;
+
+    font-family: $font-bold;
     text-align: left;
-    margin-bottom: 11px;
   }
   &__item-author {
+    margin-bottom: 8px;
+
+    text-transform: none;
     text-align: left;
   }
   &__item-likes {
-    margin-left: 37px;
+    margin-left: 1px;
     text-align: left;
   }
   &__item-link {
     text-decoration: none;
     font-size: 0;
+  }
+  &__likes-image {
+    margin-right: 12px;
   }
   &__likes-image-path {
     fill: #a9a9a9;
@@ -35,7 +50,13 @@
 
 @media (min-width:$tablet-width) {
   .gallery-group {
+    margin-bottom: 40px;
+    justify-content: flex-start;
     &__item {
+      margin: 0;
+      padding: 0;
+
+      border-bottom: none;
       &--full-width {
         width: 100%;
       }
@@ -57,24 +78,26 @@
       justify-content: space-between;
 
       margin-top: 0;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
 
       background-color: #f2f2f2;
     }
     &__item-descripton {
       margin-left: 20px;
-      width: 70%;
+      width: 66%;
     }
     &__item-title {
-      font-family: $font-bold;
+      margin-bottom: 0;
 
+      font-family: $font-bold;
       line-height: 24px;
       text-transform: uppercase;
     }
     &__item-author {
-      font-family: $font;
+      margin-bottom: 0;
 
+      font-family: $font;
       line-height: 24px;
     }
     &__item-likes {
@@ -103,7 +126,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(79, 80, 65, 0.3);
+      background-color: rgba(0, 0, 0, 0.3);
     }
     &__item-title {
       font-family: $font-bold;

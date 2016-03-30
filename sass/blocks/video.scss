@@ -2,10 +2,10 @@
   position: relative;
   &__title {
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 11px;
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 35px;
+    padding-top: 9px;
 
     font-family: $font-bold;
     color: $base-color-bold;
@@ -38,11 +38,17 @@
 
 @media (min-width: $tablet-width) {
   .video {
+    margin-bottom: 40px;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
     &__description {
       width: 427px;
+      margin-bottom: 72px;
     }
     &__item {
-      min-height: 92px;
+      min-height: 0;
 
       background-color: transparent;
     }
@@ -54,6 +60,18 @@
       height: 499px;
 
       margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    margin-bottom: 85px;
+    &__title {
+      margin-bottom: 19px;
+    }
+    &__image {
+      width: (800px/$desktop-width)*100%;
     }
   }
 }
