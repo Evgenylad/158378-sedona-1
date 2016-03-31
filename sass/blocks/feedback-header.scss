@@ -39,3 +39,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback-header {
+    &__title {
+      margin: 0;
+      margin-bottom: 33px;
+    }
+    &__description {
+      margin-bottom: 39px;
+    }
+  }
+}

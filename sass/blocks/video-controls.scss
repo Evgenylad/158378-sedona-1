@@ -47,6 +47,7 @@
     border: none;
     line-height: 66px;
     background-color: transparent;
+    outline: none;
   }
   &__subtitles {
     width: 12%;
@@ -59,6 +60,7 @@
     text-align: right;
     line-height: 66px;
     background-color: transparent;
+    outline: none;
   }
   &__fullscreen {
     width: 10%;
@@ -70,8 +72,24 @@
     border: none;
     line-height: 66px;
     background-color: transparent;
+    outline: none;
   }
 }
+
+.video-controls__btn:hover > .video-controls__icon .video-controls__icon-path {
+  fill: #333333;
+}
+.video-controls__btn:hover {
+  fill: #333333;
+}
+.video-controls__btn:active > .video-controls__icon .video-controls__icon-path {
+  fill: #c1c1c1;
+}
+.video-controls__btn:active {
+  fill: #c1c1c1;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .video-controls {
