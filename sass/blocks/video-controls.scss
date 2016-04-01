@@ -5,12 +5,11 @@
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 46px;
   width: (280px/$mobile-width)*100%;
 
   margin-left: (20px/$mobile-width)*100%;
   margin-right: (20px/$mobile-width)*100%;
-
   &__items {
     width: 100%;
     min-height: 45px;
@@ -38,19 +37,20 @@
     background-color: #ffffff;
   }
   &__replay {
-    width: 10%;
+    width: 16px;
+    height: 20px;
     order: 1;
 
     margin-left: (25px/$mobile-width)*100%;
     padding: 0;
 
     border: none;
-    line-height: 66px;
     background-color: transparent;
     outline: none;
   }
   &__subtitles {
-    width: 12%;
+    width: 32px;
+    height: 20px;
     order: 2;
 
     margin-left: (100px/$mobile-width)*100%;
@@ -58,21 +58,23 @@
 
     border: none;
     text-align: right;
-    line-height: 66px;
     background-color: transparent;
     outline: none;
   }
   &__fullscreen {
-    width: 10%;
+    width: 20px;
+    height: 20px;
     order: 3;
 
     margin-right: (25px/$mobile-width)*100%;
     padding: 0;
 
     border: none;
-    line-height: 66px;
     background-color: transparent;
     outline: none;
+  }
+  &__btn {
+    padding-top: 20px;
   }
 }
 
@@ -102,8 +104,8 @@
     margin: 0 auto;
 
     background-color: rgba(0, 0, 0, 0.6);
-
     &__items {
+      width: 70%;
       background-color: transparent;
     }
     &__scale {
@@ -131,7 +133,6 @@
 
       margin-left: (35px/$tablet-width)*100%;
       padding: 0;
-      padding-top: 5px;
 
       border: none;
     }
@@ -140,7 +141,6 @@
 
       margin-left: (35px/$tablet-width)*100%;
       padding: 0;
-      padding-top: 5px;
 
       border: none;
       text-align: right;
@@ -149,13 +149,16 @@
       order: 2;
 
       margin-left: (40px/$tablet-width)*100%;
+      padding: 0;
       padding-right: 10px;
-      padding-top: 5px;
 
       border: none;
     }
     &__icon {
       fill: #ffffff;
+    }
+    &__btn {
+      margin-top: 32px;
     }
   }
 }
@@ -165,8 +168,8 @@
     width: (800px/$desktop-width)*100%;
     left: (200px/$desktop-width)*100%;
     &__items {
-      margin-left: 12px;
-
+      width: 69%;
+      margin-right: 10px;
       background-color: transparent;
     }
     &__toggle {
@@ -180,15 +183,14 @@
       margin-top: 43px;
     }
     &__replay {
-      margin-left: (24px/$desktop-width)*100%;
+      margin-left: (48px/$desktop-width)*100%;
     }
     &__subtitles {
       margin-left: 0;
-      margin-right: (20px/$desktop-width)*100%;
     }
     &__fullscreen {
       margin-left: 0;
-      margin-right: (30px/$desktop-width)*100%;
+      margin-right: (64px/$desktop-width)*100%;
     }
   }
 }

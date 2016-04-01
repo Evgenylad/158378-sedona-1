@@ -59,17 +59,19 @@
       border-bottom: none;
       &--full-width {
         width: 100%;
+        height: auto;
       }
       &--low-width {
         width: 50%;
+        height: auto;
       }
     }
     &__item-image {
       width: 100%;
-      height: 267px;
+      height: auto;
       margin-top: 0;
       &--fullwidth {
-        height: 400px;
+        height: auto;
       }
     }
     &__item-bottom-row {

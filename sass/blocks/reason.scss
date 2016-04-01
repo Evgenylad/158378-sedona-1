@@ -88,7 +88,9 @@
   &__number {
     position: relative;
     display: block;
-    margin: 0;
+    width: 20px;
+
+    margin: 0 auto;
     margin-bottom: 15px;
     padding: 0;
     &--blue {
@@ -96,7 +98,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: 115px;
+        left: -15px;
 
         width: 9px;
         height: 1px;
@@ -108,7 +110,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 115px;
+        right: -18px;
 
         width: 9px;
         height: 1px;
@@ -122,7 +124,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: 105px;
+        left: -15px;
 
         width: 9px;
         height: 1px;
@@ -134,7 +136,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 105px;
+        right: -18px;
 
         width: 9px;
         height: 1px;
@@ -149,8 +151,10 @@
     width: 100%;
     padding: 0;
     margin: 0;
-
-    word-wrap: break-word;
+    &--gray1 {
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -220,23 +224,6 @@
     }
     &__number {
       margin-bottom: 22px;
-      &--blue {
-        &::after {
-          right: 102px;
-        }
-        &::before {
-          left: 102px;
-        }
-      }
-      &--gray {
-        &::after {
-          top: 50%;
-          right: 102px;
-        }
-        &::before {
-          left: 105px;
-        }
-      }
     }
     &--blue {
       min-height: 256px;
@@ -299,25 +286,6 @@
     }
     &--blue {
       padding-top: 50px;
-    }
-    &__number {
-      &--blue {
-        &::after {
-          right: 216px;
-        }
-        &::before {
-          left: 216px;
-        }
-      }
-      &--gray {
-        &::after {
-          top: 50%;
-          right: 216px;
-        }
-        &::before {
-          left: 216px;
-        }
-      }
     }
   }
 }

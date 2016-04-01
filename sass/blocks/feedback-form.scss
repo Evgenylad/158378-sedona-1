@@ -107,7 +107,7 @@
     &:hover {
       background-color: #e5e5e5;
     }
-    &:active {
+    &:focus {
       background-color: #ffffff;
       outline: 4px solid #e5e5e5;
     }
@@ -233,12 +233,6 @@ input[type="checkbox"]:checked + .feedback-form__label .feedback-form__image {
 input[type="radio"]:checked ~ .feedback-form__label--radio::before {
   background-color: #333333;
 }
-input.feedback-form__input:focus + .feedback-form__inner-label {
-  display: none;
-}
-.feedback-form__textarea:focus + .feedback-form__inner-label {
-  display: none;
-}
 .feedback-form__label--radio:hover::before {
   border: 17px solid #e5e5e5;
   background-color: #e5e5e5;
@@ -263,7 +257,6 @@ input.feedback-form__input:focus + .feedback-form__inner-label {
     flex-wrap: wrap;
     justify-content: space-between;
     &__item {
-
       width: 100%;
 
       margin: 0;
@@ -280,6 +273,9 @@ input.feedback-form__input:focus + .feedback-form__inner-label {
           padding-left: (65px/$tablet-width)*100%;
           border-left: 1px solid #dbdbdb;
         }
+      }
+      &:nth-child(6) {
+        display: flex;
       }
       &--first {
         order: -1;
@@ -298,7 +294,7 @@ input.feedback-form__input:focus + .feedback-form__inner-label {
       }
       &--full-width {
         position: relative;
-        width: 45%;
+        width: 305px;
         margin-bottom: 6px;
         margin-left: auto;
         margin-right: auto;
@@ -376,12 +372,15 @@ input.feedback-form__input:focus + .feedback-form__inner-label {
       &--phone {
         width: 100%;
         &::after {
-          top: 48px;
+          top: 52px;
         }
       }
       &--email {
         align-self: flex-end;
         width: 100%;
+        &::after {
+          top: 56px;
+        }
       }
     }
     &__label {
