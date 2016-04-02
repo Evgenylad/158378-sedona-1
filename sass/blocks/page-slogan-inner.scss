@@ -1,12 +1,10 @@
-.page-slogan {
+.page-slogan-inner {
   position: relative;
-  width: 100%;
-  height: 387px;
+  height: 157px;
+
   background-color: #386181;
   background: url("../img/bg-back-mobile.jpg") no-repeat;
-  background-size: cover;
   background-position: bottom;
-
   &::after {
     content: "";
     position: absolute;
@@ -16,46 +14,45 @@
     width: 100%;
     height: 27px;
 
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-repeat: no-repeat;
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
     background-size: 100% 27px;
+
   }
   &__img {
     box-sizing: border-box;
     width: 100%;
-
-    margin-top: 90px;
-    padding-left: (20px/$mobile-width)*100%;
-    padding-right: (20px/$mobile-width)*100%;
+    margin-top: 52px;
   }
   @media (min-resolution: 144dpi),
          (min-resolution: 1.5dppx) {
-    .page-slogan {
+    .page-slogan-inner {
       background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .page-slogan {
-    min-height: 518px;
+  .page-slogan-inner {
+    height: 291px;
     background: url("../img/bg-back-desktop.jpg") no-repeat;
-
+    background-position: bottom;
     &::after {
       height: 57px;
+
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-size: 100% 57px;
     }
     &__img {
       min-width: 462px;
-      height: 356px;
-      margin-top: 78px;
+      height: 79px;
+
+      margin-top: 95px;
       padding-left: (154px/$tablet-width)*100%;
       padding-right: (154px/$tablet-width)*100%;
     }
     @media (min-resolution: 144dpi),
            (min-resolution: 1.5dppx) {
-      .page-slogan {
+      .page-slogan-inner {
         background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
       }
     }
@@ -63,18 +60,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-slogan {
+  .page-slogan-inner {
+      height: 300px;
+      background-position: bottom;
     &::after {
-      left: -1px;
       width: 1201px;
+      left: -1px;
+
       background-image: url("../img/bg-intro-triangle-desktop.svg");
       background-size: 1201px 57px;
     }
     &__img {
-      padding-left: (370px/$desktop-width)*100%;
-      padding-right: (370px/$desktop-width)*100%;
-    }
-    &__img-inner {
       margin-top: 100px;
       padding-left: (370px/$desktop-width)*100%;
       padding-right: (370px/$desktop-width)*100%;

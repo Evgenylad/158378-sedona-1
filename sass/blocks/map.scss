@@ -1,5 +1,12 @@
 .map {
-  &__canvas {
-    background-color: #f4f4f0;
+  position: relative;
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__map-marker {
+    position: absolute;
+    bottom: 46%;
+    left: 49%;
   }
 }
