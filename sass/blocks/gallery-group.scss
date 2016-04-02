@@ -41,6 +41,11 @@
     text-decoration: none;
     font-size: 0;
   }
+  &__likes-btn {
+    background-color: inherit;
+    border: none;
+    outline: none;
+  }
   &__likes-image {
     margin-right: 12px;
   }
