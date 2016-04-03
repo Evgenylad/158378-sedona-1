@@ -23,6 +23,8 @@
   background-color: $base-background;
   border: none;
   &__image {
+  width: 23px;
+  height: 22px;
   fill: $btn-background;
   }
 }

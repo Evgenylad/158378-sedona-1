@@ -43,6 +43,10 @@
     position: absolute;
     top: 26px;
     left: -63px;
+
+    width: 26px;
+    height: 19px;
+    
     z-index: 10;
   }
   &__input-group {
@@ -84,7 +88,7 @@
 
         background: url("../img/icon-phone.svg") no-repeat;
         background-position: center;
-        background-size: 18px 12px;
+        background-size: 23px 22px;
         background-color: #e6e6e6;
       }
     }

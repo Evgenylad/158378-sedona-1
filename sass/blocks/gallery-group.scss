@@ -33,8 +33,9 @@
     text-align: left;
   }
   &__item-likes {
+    display: flex;
     margin-left: 1px;
-    
+
     text-align: left;
     cursor: pointer;
   }
@@ -43,6 +44,13 @@
     font-size: 0;
   }
   &__likes-btn {
+    align-self: center;
+    width: 22px;
+    height: 22px;
+
+    padding:0;
+    margin-right: 12px;
+
     background-color: inherit;
     border: none;
     outline: none;
@@ -51,9 +59,9 @@
     align-self: center;
   }
   &__likes-image {
-    margin-right: 12px;
-  }
-  &__likes-image-path {
+    width: 22px;
+    height: 22px;
+
     fill: #a9a9a9;
   }
 }
@@ -113,8 +121,6 @@
       line-height: 24px;
     }
     &__item-likes {
-      display: flex;
-      align-self: center;
       width: 85px;
 
       margin-left: 0;

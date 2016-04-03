@@ -81,6 +81,28 @@ module.exports = function(grunt) {
       }
     },
 
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src:["img/icons/*.svg"]
+        }]
+      }
+    },
+
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none"
+        }
+      },
+      symbols: {
+        files: {
+        "img/symbols.svg": ["img/icons/*.svg"]
+        }
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
@@ -117,14 +139,15 @@ module.exports = function(grunt) {
     }
   });
 
-
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("build", [
     "clean",
     "copy",
     "sass",
     "postcss",
     "csso",
+    "symbols",
     "imagemin"
   ]);
 };
