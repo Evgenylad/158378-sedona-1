@@ -4,10 +4,36 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      }
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: ["build"]
+        }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
+    },
+
     sass: {
       style: {
         files: {
-          "css/style.css": "sass/style.scss"
+          "build/css/style.css": "sass/style.scss"
         }
       }
     },
@@ -28,33 +54,7 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: "css/*.css"
-      }
-    },
-
-    browserSync: {
-      server: {
-        bsFiles: {
-          src: [
-            "*.html",
-            "css/*.css"
-          ]
-        },
-        options: {
-          server: ".",
-          watchTask: true,
-          notify: false,
-          open: true,
-          ui: false
-        }
-      }
-    },
-
-    watch: {
-      files: ["sass/**/*.{scss,sass}"],
-      tasks: ["sass", "postcss"],
-      options: {
-        spawn: false
+        src: "build/css/*.css"
       }
     },
 
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
           report: "qzip"
         },
         files: {
-          "css/style.min.css": ["css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
     },
@@ -76,16 +76,52 @@ module.exports = function(grunt) {
         },
         files: [{
           epand: true,
-          src: ["img/**/*.{png,jpg,gif}"]
+          src: ["build/img/**/*.{png,jpg,gif}"]
         }]
       }
     },
 
+    browserSync: {
+      server: {
+        bsFiles: {
+          src: [
+            "build/*.html",
+            "build/css/*.css"
+          ]
+        },
+        options: {
+          server: "build",
+          watchTask: true,
+          notify: false,
+          open: true,
+          ui: false
+        }
+      }
+    },
 
+    watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"],
+        option: {
+          spawn: false
+        }
+      }
+      style: {
+        files: ["sass/**/*.{scss,sass}"],
+        tasks: ["sass", "postcss", "csso"],
+        options: {
+          spawn: false
+        }
+      }
+    }
   });
+
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
+    "clean",
+    "copy",
     "sass",
     "postcss",
     "csso",
