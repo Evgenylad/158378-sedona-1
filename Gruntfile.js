@@ -22,6 +22,9 @@ module.exports = function(grunt) {
             "last 2 Opera versions",
             "last 2 Edge versions"
           ]})
+          require("css-mqpacker")({
+            sort: true
+          })
         ]
       },
       style: {
@@ -53,8 +56,39 @@ module.exports = function(grunt) {
       options: {
         spawn: false
       }
-    }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "qzip"
+        },
+        files: {
+          "css/style.min.css": ["css/style.css"]
+        }
+      }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          epand: true,
+          src: ["img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+
+
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("build", [
+    "sass",
+    "postcss",
+    "csso",
+    "imagemin"
+  ])
 };
