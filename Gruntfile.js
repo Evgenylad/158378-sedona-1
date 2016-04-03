@@ -16,12 +16,12 @@ module.exports = function(grunt) {
           ],
           dest: "build"
         }]
-      }
+      },
       html: {
         files: [{
           expand: true,
           src: ["*.html"],
-          dest: ["build"]
+          dest: "build"
         }]
       }
     },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             "last 2 Firefox versions",
             "last 2 Opera versions",
             "last 2 Edge versions"
-          ]})
+          ]}),
           require("css-mqpacker")({
             sort: true
           })
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
         option: {
           spawn: false
         }
-      }
+      },
       style: {
         files: ["sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"],
@@ -126,5 +126,5 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "imagemin"
-  ])
+  ]);
 };
