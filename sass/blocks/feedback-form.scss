@@ -46,7 +46,7 @@
 
     width: 26px;
     height: 18px;
-    
+
     z-index: 10;
   }
   &__input-group {
@@ -63,7 +63,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: 20px;
         right: 0;
 
         width: 58px;
@@ -79,7 +79,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: 26px;
         right: 0;
 
         width: 58px;
