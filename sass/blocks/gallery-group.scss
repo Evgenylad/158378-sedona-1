@@ -121,9 +121,8 @@
       line-height: 24px;
     }
     &__item-likes {
-      width: 85px;
-
       margin-left: 0;
+      margin-right: 20px;
     }
     &__likes-image {
       margin-right: 10px;
@@ -162,6 +161,9 @@
     }
     &__likes-image {
       fill: #ffffff;
+    }
+    &__likes-count {
+      padding-top: 10px;
     }
   }
 }

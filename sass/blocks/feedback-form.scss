@@ -370,14 +370,14 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
       &--phone {
         width: 100%;
         &::after {
-          top: 52px;
+          bottom: 0;
         }
       }
       &--email {
         align-self: flex-end;
         width: 100%;
         &::after {
-          top: 56px;
+          bottom: 15px;
         }
       }
     }
@@ -514,17 +514,12 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
       }
       &--phone {
         width: (400/960)*100%;
-
-        &::after {
-          top: 36px;
-        }
       }
       &--email {
         align-self: flex-end;
         width: 50%;
         &::after {
-          top: 8px;
-          background-size: 17px 17px;
+          bottom: 0;
         }
       }
     }
