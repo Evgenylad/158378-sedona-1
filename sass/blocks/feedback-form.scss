@@ -6,9 +6,6 @@
 
     border: none;
     border-bottom: 1px solid #e5e5e5;
-    &:last-of-type {
-      border: none;
-    }
     &--half-width {
       padding-top: 16px;
     }
@@ -48,8 +45,8 @@
     left: -63px;
 
     width: 26px;
-    height: 19px;
-
+    height: 18px;
+    
     z-index: 10;
   }
   &__input-group {
@@ -61,33 +58,35 @@
     &--name {
       flex-wrap: nowrap;
     }
-    &--phone {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 26px;
-        right: 0;
-
-        width: 58px;
-        height: 58px;
-
-        background: url("../img/icon-phone.svg") no-repeat center;
-        background-size: 23px 22px;
-        background-color: #e6e6e6;
-      }
-    }
     &--email {
+      position: relative;
       &::after {
         content: "";
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
         right: 0;
 
         width: 58px;
         height: 58px;
 
         background: url("../img/icon-mail.svg") no-repeat center;
-        background-size: 18px 13px;
+        background-size: 18px 12px;
+        background-color: #e6e6e6;
+      }
+    }
+    &--phone {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 58px;
+        height: 58px;
+
+        background: url("../img/icon-phone.svg") no-repeat center;
+        background-size: 18px 12px;
         background-color: #e6e6e6;
       }
     }
@@ -374,10 +373,15 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
       }
       &--phone {
         width: 100%;
+        &::after {
+          top: 52px;
+        }
       }
       &--email {
         align-self: flex-end;
         width: 100%;
+        &::after {
+          top: 56px;
         }
       }
     }
@@ -451,6 +455,7 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
         order: 2;
         &--email {
           margin-bottom: 15px;
+        }
     }
   }
 }
@@ -505,7 +510,6 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
       }
     }
     &__input-group {
-      align-items: flex-end;
       &--checkbox {
         width: 0.25*100%;
       }
@@ -514,15 +518,17 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
       }
       &--phone {
         width: (400/960)*100%;
+
         &::after {
-          bottom: 0;
+          top: 36px;
         }
       }
       &--email {
         align-self: flex-end;
         width: 50%;
         &::after {
-          bottom: 0;
+          top: 8px;
+          background-size: 17px 17px;
         }
       }
     }
@@ -531,13 +537,13 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
         padding-top: 8px;
       }
       &--phone {
-        align-self: baseline;
         margin-left: 0;
+        padding-top: 18px;
         order: 2;
       }
       &--email {
-        align-self: baseline;
         margin-left: 0;
+        padding-top: 27px;
       }
       &--desktop-hidden {
         display: none;
@@ -586,6 +592,7 @@ input[type="radio"]:checked ~ .feedback-form__label--radio::before {
         width: (314/480)*100%;
 
         margin-left: 20px;
+        margin-top: 8px;
         margin-bottom: 0;
 
         padding-top: 16px;
